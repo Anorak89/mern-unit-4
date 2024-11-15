@@ -11,8 +11,7 @@ const addMovie = (movie) => {
 };
 
 const updateMovie = (movie) => {
-  return axios.put(`${baseURL}/${movie.id}`, movie)
-  .then((res) => res.data);
+  return axios.put(`${baseURL}/${movie.id}`, movie).then((res) => res.data);
 };
 
 export default { getMovies, addMovie, updateMovie };
